@@ -1,0 +1,47 @@
+.footer {
+  background-color: black;
+  color: azure;
+  padding: 2vh 0px;
+}
+
+.impLinks {
+  display: inline-block;
+  width: 40vw;
+}
+
+.copyRight {
+  text-align: left;
+  display: inline-block;
+  width: 50vw;
+}
+
+.linkList {
+  display: flex;
+  margin-left: 180px;
+}
+
+.linkList li {
+  margin: 0px 10px;
+}
+
+.footer a,
+.preFooter a {
+  color: azure;
+  text-decoration: none;
+  transition: all ease 1s;
+}
+.footer a::after,
+.preFooter a::after {
+  content: "";
+  width: 00%;
+  height: 1px;
+  margin-top: 3px;
+  background: rgb(245, 149, 6);
+  display: block;
+  transition: 0.4s;
+}
+
+.footer a:hover::after,
+.preFooter a:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+.productList{
+    padding: 20px;
+    display: flex;
+    flex-direction: col;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product{
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+.product img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product:hover{
+    scale: 1.03;
+}
