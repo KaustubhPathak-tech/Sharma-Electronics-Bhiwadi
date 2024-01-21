@@ -111,3 +111,20 @@
   }
   
   /* Navbar End */
+
+  /* custom css */
+
+  #rightMenu{
+    width: 20vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  #enqbtn{
+      margin-left: 10px;
+      margin-top:-3px;
+      padding: 5px;
+      padding-bottom: 10px;
+      height: 40px;
+  }

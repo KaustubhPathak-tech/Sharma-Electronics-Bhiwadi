@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <section class="footer" id="footer">
-        <span class="copyright_and_signoff">
+        <span class="copyRight">
           &copy; {year} Sharma Electronics Bhiwadi | All Rights Reserved |
           Powered by Swift.AI
         </span>

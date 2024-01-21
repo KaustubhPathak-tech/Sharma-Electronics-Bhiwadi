@@ -1,29 +1,26 @@
 import React from "react";
-import { Menu, Avatar } from "antd";
-import { UserOutlined, CodeOutlined, LogoutOutlined } from "@ant-design/icons";
+import "./Navbar.css";
+
+import { Menu, Avatar, Button } from "antd";
+import {
+  UserOutlined,
+  CodeOutlined,
+  LogoutOutlined,
+  DownloadOutlined,
+} from "@ant-design/icons";
 
 const RightMenu = ({ mode }) => {
   return (
-    <Menu mode={mode}>
-      {/* <Menu.SubMenu
-        title={
-          <>
-            <Avatar icon={<UserOutlined />} />
-            <span className="username">John Doe</span>
-          </>
-        }
-      >
-        <Menu.Item key="project">
-          <CodeOutlined /> Projects
-        </Menu.Item>
-        <Menu.Item key="about-us">
-          <UserOutlined /> Profile
-        </Menu.Item>
-        <Menu.Item key="log-out">
-          <LogoutOutlined /> Logout
-        </Menu.Item>
-      </Menu.SubMenu> */}
-    </Menu>
+    <div id="rightMenu">
+      <Button type="primary" icon={<DownloadOutlined />} data-toggle="tooltip" title="Download Catalogue" />
+      <Button type="default" id="enqbtn" data-toggle="tooltip" title="Get Quotation">
+        <img
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/registration-form-5228737-4379744.png?f=webp"
+          height="30px"
+          width="30px"
+        />
+      </Button>
+    </div>
   );
 };
 

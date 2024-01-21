@@ -45,3 +45,10 @@
 .preFooter a:hover::after {
   width: 100%;
 }
+
+@media (max-width: 450px) {
+  .footer {
+    display: none;
+  }
+
+}
