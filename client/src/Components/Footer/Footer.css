@@ -4,6 +4,11 @@
   padding: 2vh 0px;
 }
 
+.footerContactDetails{
+  text-align: left;
+  padding-left: 4.5vw;
+}
+
 .impLinks {
   display: inline-block;
   width: 40vw;

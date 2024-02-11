@@ -1,36 +1,36 @@
 import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
 import { Layout, Button, Drawer } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+
 import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
-import { MenuOutlined } from "@ant-design/icons";
-import { useLocation } from "react-router-dom";
 
 import logo from "../../Assets/Images/logo.png";
-
 import "./Navbar.css";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  
   const showDrawer = () => {
     setVisible(!visible);
   };
-
-  // If you do not want to auto-close the mobile drawer when a path is selected
-  // Delete or comment out the code block below
-  // From here
   let { pathname: location } = useLocation();
   useEffect(() => {
     setVisible(false);
   }, [location]);
-  // Upto here
 
   return (
     <nav className="navbar">
+      
       <Layout>
         <Layout.Header className="nav-header">
-          <div className="logo">
-            <img src={logo} alt="logo" height="50px" />
-          </div>
+          <Link to="/">
+            <div className="logo">
+              <img src={logo} alt="logo" height="50px" />
+            </div>
+          </Link>
           <div className="navbar-menu">
             <div className="leftMenu">
               <LeftMenu mode={"horizontal"} />
@@ -47,7 +47,7 @@ const Navbar = () => {
               placement="right"
               closable={true}
               onClose={showDrawer}
-              visible={visible}
+              open={visible}
               style={{ zIndex: 99999 }}
             >
               <LeftMenu mode={"inline"} />
