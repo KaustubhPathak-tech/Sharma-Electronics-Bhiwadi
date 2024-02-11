@@ -51,8 +51,8 @@ const RouteConfig = () => {
         <Widget />
         <div id="whatsapp">
           <WhatsAppComponent
-            phoneNumber="+918707887106"
-            message="Hello, I am interested in your products."
+            phoneNumber="+918708583696"
+            message="Hello, I am interested in your products. Please contact me."
           />
         </div>
         <Footer />
