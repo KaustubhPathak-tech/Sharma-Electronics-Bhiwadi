@@ -11,8 +11,9 @@ import logo from "../../Assets/Images/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+  //drawer settings
+
   const [visible, setVisible] = useState(false);
-  
   const showDrawer = () => {
     setVisible(!visible);
   };
@@ -23,7 +24,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      
       <Layout>
         <Layout.Header className="nav-header">
           <Link to="/">
