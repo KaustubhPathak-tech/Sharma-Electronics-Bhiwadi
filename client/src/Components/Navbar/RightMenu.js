@@ -23,7 +23,7 @@ function CustomButton(props) {
         window.location.href = "/";
       } else {
         axios
-          .post("http://localhost:7005/sendMessage@SharmaEle", {
+          .post("https://portfolioserver-beryl.vercel.app/sendMessage@SharmaEle", {
             name,
             email,
             phone,
@@ -109,7 +109,7 @@ function Form(props) {
     <div className="main">
       <Spin spinning={spinning} fullscreen />
       <form className="main-form">
-        {/* https://portfolioserver-beryl.vercel.app */}
+        {/*  */}
         <h1>Contact Us</h1> <br />
         <div>
           <label>Name</label> <br />
